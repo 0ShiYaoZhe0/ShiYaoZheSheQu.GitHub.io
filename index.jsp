@@ -16,7 +16,7 @@
 		<div id="header">
 			<div align="center">
 				<marquee>
-					<a>ʳҢ�������ĵ�һ�׶Σ����ڿ����С�����������</a>
+					<a>食尧者社区的第一阶段，正在开发中。。。。。。</a>
 				</marquee>
 			</div>
 		</div>
@@ -30,15 +30,15 @@
 			 			name = "";
 			 		}else{
 			 	 %>
-			 	 <%=name %>�ѵ�¼
+			 	 <%=name %>已登录
 			 	 <%
 			 	 	}
 			 	  %>
 			 </div>
 			 <div id="content">
 			 	<form method="post" action="LoginServlet" align="center">
-			 		�û�����<input id="userName"type="text" name="name" value=""/>
-			 		���ʳҢ�������������������������<input id="userPwd"type="password" name="passwd" value="" style="width:155px"/><br>
+			 		用户名：<input id="userName"type="text" name="name" value=""/>
+			 		口令（食尧者社区主饶正宇给的人社口令）：<input id="userPwd"type="password" name="passwd" value="" style="width:155px"/><br>
 			 	<p>
 			 <script language="javascript" type="text/javascript">
 			 	function validate(){
@@ -47,12 +47,12 @@
 			 		if (!(userName == "0ShiYaoZhe0" || userPwd =="11451419")){
 			 			document.getElementById("login").submit();
 			 		}else{
-			 			alert("��¼��Ϣ����ȷ")
+			 			alert("登录信息不正确")
 			 		}
 			 	}		
 			 </script>
-			 		<input type="submit" value="��¼" name="submit" />
-			 		<input type="reset" value="����" name="" />
+			 		<input type="submit" value="登录" name="submit" />
+			 		<input type="reset" value="重置" name="" />
 	 		 	</form>
 			 </div>
 		</div>
