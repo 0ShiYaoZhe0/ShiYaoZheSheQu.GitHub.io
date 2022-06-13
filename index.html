@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<%@ page language=“java” contentType=“text/html;charset=gbk“pageEncoding=”gbk”%>
+<%
+    字符串路径 = 请求。getContextPath（）;
+    字符串基路径 = 请求。getScheme（） + “：//”
+    	+请求。getServerName（） + “：” + request.getServerPort（）
+    	+路径+ "/";
+%>
+<断续器>
+<头>
+<meta http-equiv=“Content-Type” Content=“text/thml;字符集=gbk”>
+<link href=“css/layout.css”rel=“stylesheet” type=“text/css”/>
+</头>
+<身体>
+	<div id=“container”>
+		<div id=“header”>
+			<div align=“center”>
+				<选取 框>
+					<a>食尧者社区的第一阶段，正在开发中。。。。。</a>
+				</选取 框>
+			</迪夫>
+		</迪夫>
+		<div id=“mainContent”>
+			<%
+				字符串名称 = （字符串） 会话。getAttribute（“name”);
+			 %>
+			 <div id=“侧边栏”>
+			 	<%
+			 		如果 （名称 == 空){
+名字= "";
+			 		}还{
+			 	 %>
+			 	 <%=名称 %>已登录
+			 	 <%
+			 	 	}
+			 	  %>
+			 </迪夫>
+			 <div id=“content”>
+			 	<form method=“post” action=“LoginServlet” align=“center”>
+用户名：<输入 id=“用户名”类型=“文本”名称=“名称”值=""/>
+口令（食尧者社区主饶正宇给的人社口令）：<input id=“userPwd”type=“password” name=“passwd” value=“” style=“width：155px”/><br>
+			 	<p>
+			 <script language=“javascript” type=“text/javascript”>
+			 	函数验证(){
+			 		var 用户名 = 文档。getElementById（“userName”）.价值;
+			 		var 用户名 = 文档。getElementById（“userPwd”）.价值;
+			 		如果 （！（用户名 == “0ShiYaoZhe0” ||userPwd ==“11451419”)){
+			 			文档。getElementById（“login”）.提交();
+			 		}还{
+			 			alert（“登录信息不正确”)
+			 		}
+			 	}		
+			 </脚本>
+			 		<输入类型=“提交” 值=“登录” 名称=“提交” />
+			 		<输入类型=“重置”值=“重置”名称="" />
+	 		 	</形式>
+			 </迪夫>
+		</迪夫>
+	</迪夫>
+</身体>
+</断续器>
